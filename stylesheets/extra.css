@@ -1,0 +1,11 @@
+.md-grid {
+    max-width: 1440px; 
+  }
+
+  :root {
+    --md-primary-fg-color:        #00142E;
+    --md-primary-bg-color:        rgb(255, 255, 255);
+    --md-accent-fg-color:         rgb(142, 7, 196);
+
+  }
+  
