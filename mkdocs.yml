@@ -1,11 +1,11 @@
-site_name: Kafka Services
+site_name: PubSub Services
 #site_url: https://pages.github.ford.com/serverless/serverless-hub/
 site_description: Project documentation with Markdown.
-site_author: lsamue16@ford.com
-repo_name: confluent-kafka-documentation
-repo_url: https://github.ford.com/fordkafka/confluent-kafka-documentation
+site_author:  lsamue16@FOPRD.COM
+#repo_name: serverless/serverless-hub
+#repo_url: https://github.ford.com/serverless/serverless-hub/
 #edit_uri: blob/master/docs
-copyright: Copyright &copy; Ford Cloud Platform 
+copyright: Copyright &copy; 2023 Ford Cloud Platform All Rights Reserved
 markdown_extensions:
   - abbr
   - admonition
@@ -20,8 +20,7 @@ markdown_extensions:
   
 # Configuration
 theme:
-  
-  logo: image/ford-logo.png
+  logo: img/ford-logo.png
   name: material
   features:
     # - navigation.sections
@@ -74,52 +73,33 @@ theme:
     text: Roboto
     code: Roboto Mono 
 
-extra: 
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.ford.com/fordkafka/confluent-kafka-documentation
-    - icon: fontawesome/brands/docker
-      link: https://registry.ford.com/organization/confluentkafka
-
-
 nav:
   - Home: 
 ########## Left pane navigation ##########
-    - Kafka:
-      - Overview: kafka/README.md
-      - Kafka-onboarding-pre-requisite: kafka/Onboarding_Pre-requisite.md
-      - Kafka-onboarding-using-fcp: kafka/onboarding-fcp.md
-      - Connect-to-kafka: kafka/how-to-connect-to-kafka.md
-      - Kafka-cli-commands: kafka/kafka-cli-commnds.md
-      - Monitoring-topic-consumer: kafka/Topic-Consumer-Monitoring.md
-      - Monitoring-consumer-lag: kafka/monitoring_consumer_lag.md
-      - MultiRegion-testing: kafka/cluster_linking_multregion_testing_steps.md
-      - Performance-tuning: kafka/Performance_Tuning.md
-      - Update-configs: kafka/configs.md
-      - Consumer-offset-management: kafka/consumer-offset-management.md
-      - Data-compression: kafka/data-compression.md
-      - Frequently Asked Question (FAQ): kafka/FAQ.md
+    - PubSub:
+      - Overview: pubsub/Overview.md
+      - Terraform Modules: https://github.ford.com/gcp/tfm-pubsub
+      - Monitoring: pubsub/pubsub-monitoring.md
+      - Public Internet Access: pubsub/public-access-pubsub-service.md
+      - MultiRegion: pubsub/pubsub-multiregion.md
+      - Day 2 Operations: pubsub/pubsub-day2-operations.md
+      - Frequently Asked Question (FAQ): pubsub/FAQ.md
 ####################
   # - Understanding the basics: To-be-defined.md
   # - Core Concepts: Core-concepts.md   
   # - Getting Started:
-  - Kafka: 
+  - PubSub: 
     # - Introduction:
     #   - What is Cloud Function: Serverless-Docs/cloud-functions/What-is-Cloud-Function.md
     #   - When to use Cloud Function: Serverless-Docs/cloud-functions/When-to-use-Cloud-Function.md
-      - Overview: kafka/README.md
-      - Kafka-onboarding-pre-requisite: kafka/Onboarding_Pre-requisite.md
-      - Kafka-onboarding-using-fcp: kafka/onboarding-fcp.md
-      - Connect-to-kafka: kafka/how-to-connect-to-kafka.md
-      - Kafka-cli-commands: kafka/kafka-cli-commnds.md
-      - Monitoring-topic-consumer: kafka/Topic-Consumer-Monitoring.md
-      - Monitoring-consumer-lag: kafka/monitoring_consumer_lag.md
-      - MultiRegion-testing: kafka/cluster_linking_multregion_testing_steps.md
-      - Performance-tuning: kafka/Performance_Tuning.md
-      - Update-configs: kafka/configs.md
-      - Consumer-offset-management: kafka/consumer-offset-management.md
-      - Data-compression: kafka/data-compression.md
-      - Frequently Asked Question (FAQ): kafka/FAQ.md
+    - Overview: pubsub/Overview.md
+    - Terraform Modules: https://github.ford.com/gcp/tfm-pubsub
+    - Monitoring: pubsub/pubsub-monitoring.md
+    - Public Internet Access: pubsub/public-access-pubsub-service.md
+    - MultiRegion: pubsub/pubsub-multiregion.md
+    - Day 2 Operations: pubsub/pubsub-day2-operations.md
+    - Migrate from 1.0 to 2.0: pubsub/pubsub-migration-2_0.md
+    - Frequently Asked Question (FAQ): pubsub/FAQ.md
 
 extra_css:
   - stylesheets/extra.css    

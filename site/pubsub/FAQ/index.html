@@ -1,0 +1,1563 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Project documentation with Markdown.">
+      
+      
+        <meta name="author" content="DRAJINIG@FOPRD.COM">
+      
+      
+      
+        <link rel="prev" href="../pubsub-migration-2_0/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>Frequently Asked Question (FAQ) - PubSub Services</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32 14.3 32 32 32 32-14.3 32-32z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM224 256c0 35.3-28.7 64-64 64s-64-28.7-64-64 28.7-64 64-64 64 28.7 64 64zm128 64c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h128c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H160c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h128V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256c0-22.1-17.9-40-40-40s-40 17.9-40 40 17.9 40 40 40 40-17.9 40-40zm152 40c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}</style>
+
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pubsub-faqs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PubSub Services" class="md-header__button md-logo" aria-label="PubSub Services" data-md-component="logo">
+      
+  <img src="../../img/ford-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PubSub Services
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Frequently Asked Question (FAQ)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Overview/" class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Overview/" class="md-tabs__link md-tabs__link--active">
+        PubSub
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PubSub Services" class="md-nav__button md-logo" aria-label="PubSub Services" data-md-component="logo">
+      
+  <img src="../../img/ford-logo.png" alt="logo">
+
+    </a>
+    PubSub Services
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="false">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_1" tabindex="0" aria-expanded="false">
+          PubSub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PubSub" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          PubSub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.ford.com/gcp/tfm-pubsub" class="md-nav__link">
+        Terraform Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-access-pubsub-service/" class="md-nav__link">
+        Public Internet Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-multiregion/" class="md-nav__link">
+        MultiRegion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-day2-operations/" class="md-nav__link">
+        Day 2 Operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Frequently Asked Question (FAQ)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Frequently Asked Question (FAQ)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-answers" class="md-nav__link">
+    Questions &amp; Answers
+  </a>
+  
+    <nav class="md-nav" aria-label="Questions &amp; Answers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-how-to-setup-push-subscriptions" class="md-nav__link">
+    1. How to setup Push Subscriptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-publicly-accessible-topic" class="md-nav__link">
+    2. Publicly accessible topic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-regions-are-available-currently-in-gcp-pubsub" class="md-nav__link">
+    3. What regions are available currently in GCP PubSub?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-how-do-i-provision-my-project-in-20" class="md-nav__link">
+    4. How do I provision my project in 2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dead-letter-topic-terraform-examples" class="md-nav__link">
+    5. Dead Letter Topic terraform examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-we-are-working-on-creating-a-gcp-pubsub-topic-and-subscription-in-our-qa-project-using-terraform-but-we-are-facing-the-below-error" class="md-nav__link">
+    6. We are working on creating a GCP pubsub topic and subscription in our QA project using terraform, but we are facing the below error:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-does-a-pipeline-service-account-need-the-ford-cloud-pubsub-service-write-role-in-order-to-create-pubsub-resources-using-that-module" class="md-nav__link">
+    7. Does a pipeline service account need the Ford Cloud PubSub Service write role in order to create PubSub resources using that module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-how-to-integrate-pubsub-with-dataflow" class="md-nav__link">
+    8. How to Integrate PubSub with Dataflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-we-are-facing-permission-denied-error-while-publishing-message-to-pubsub-from-cloud-run-do-we-need-to-provide-roles-in-iamserviceaccounttokencreator-access-to-service-account" class="md-nav__link">
+    9. We are facing permission denied error while publishing message to pubsub from cloud run. Do we need to provide roles in iam.serviceAccountTokenCreator access to Service account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-can-you-provide-us-the-terraform-link-for-pubsub" class="md-nav__link">
+    10. Can you provide us the terraform link for PubSub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-we-are-trying-to-publish-an-event-from-spring-boot-project-to-google-pubsub-service-can-someone-help-me-implement-this-or-if-there-is-any-material-or-doc-to-follow-can-you-please-share-it-with-me" class="md-nav__link">
+    11. We are trying to publish an event from spring boot project to google pubsub service. Can someone help me implement this? or If there is any material or doc to follow can you please share it with me?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-how-to-listen-pubsub-from-project-to-project" class="md-nav__link">
+    12. How to listen pubsub from project to project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-the-messages-in-pubsub-are-not-consuming-fast-for-the-service-deployed-in-cloud-run-is-there-any-way-to-scale-up-pubsub-or-any-another-configurations-to-consume-the-messages-quickly" class="md-nav__link">
+    13. The messages in pubsub are not consuming fast for the service deployed in cloud run. Is there any way to scale up pubsub or any another configurations to consume the messages quickly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-we-had-our-kafka-topic-created-for-10-gcp-projects-now-we-have-created-20-projects-would-like-to-know-the-process-to-onboard-our-new-projects-on-kafka-platform-so-that-we-can-create-topic-for-new-projects" class="md-nav__link">
+    14. We had our kafka topic created for 1.0 gcp projects. Now we have created 2.0 projects. Would like to know the process to onboard our new projects on kafka platform so that we can create topic for new projects.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-using-pubsub-if-we-do-originalmessagenack-incase-of-exception-will-that-message-forwarded-to-deadletterqueue-without-any-retries" class="md-nav__link">
+    15. Using Pubsub if we do originalMessage.nack() incase of exception, will that message forwarded to deadletterqueue without any retries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-we-are-trying-to-invoke-a-cloud-run-api-on-a-scheduled-basis-for-our-business-use-case-with-the-help-of-cloud-scheduler-via-pubsub-push-subscription-invoking-the-cloud-run-endpoint-url" class="md-nav__link">
+    16. We are trying to invoke a cloud run API on a scheduled basis for our business use case with the help of Cloud Scheduler via PubSub Push Subscription invoking the Cloud Run endpoint URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-what-permissions-are-needed-to-create-a-bigquery-subscription-through-the-web-interface" class="md-nav__link">
+    17. What permissions are needed to create a Bigquery subscription through the web interface?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-what-level-of-access-is-required-to-pull-messages-from-gcp-pub-sub" class="md-nav__link">
+    18. What level of access is required to pull messages from GCP Pub-Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-we-are-trying-to-implement-google-pubsub-while-deploying-in-gke-getting-google_application_credentials-error-any-suggestion" class="md-nav__link">
+    19. We are trying to implement google pub/sub While deploying in GKE getting GOOGLE_APPLICATION_CREDENTIALS error , any suggestion?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-permission-denied-trying-to-create-a-dataflow-from-the-template-pubsub-to-avro-files-on-cloud-storage" class="md-nav__link">
+    20. Permission Denied trying to create a Dataflow from the template "Pub/Sub to Avro Files on Cloud Storage"?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-trying-to-implement-dataflow-scheduler-using-cloud-scheduler-pubsub-cloud-run-it-looks-like-we-can-not-put-message-in-cloud-scheduler-pubsub-topic-as-the-data-variable-is-not-used-is-there-a-work-around-the-cloud-scheduler-integration-with-pubsub-doesnt-have-data-field-enabled-in-the-repo-as-of-now-it-sends-data-as-test-hard-coded-can-this-be-exposed-for-the-users-to-assign-needed-data-values" class="md-nav__link">
+    21. Trying to implement dataflow scheduler using Cloud Scheduler - pubsub - cloud run. It looks like we can not put message in cloud scheduler pubsub topic as the data variable is not used. Is there a work around? the cloud scheduler integration with pubsub doesn't have data field enabled in the repo. As of now it sends data as "test" hard coded. Can this be exposed for the users to assign needed data values?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-trying-to-create-a-log-sink-at-the-folder-level-and-have-that-log-sink-publish-to-a-pubsub-topic-originally-we-were-getting-a-topic_org_policy_denied-since-then-we-have-updated-the-writer-identity-to-have-the-correct-permissions-we-are-now-getting-a-permission-denied-any-help-would-be-much-appreciated" class="md-nav__link">
+    22. Trying to create a log sink at the folder level and have that log sink publish to a pubsub topic. Originally we were getting a topic_org_policy_denied. Since then we have updated the writer identity to have the correct permissions. We are now getting a permission denied. Any help would be much appreciated.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-where-can-i-get-more-help-on-terraform" class="md-nav__link">
+    23. Where can I get more help on Terraform?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-where-can-i-find-the-pubsub-service-account-that-was-created-when-i-selected-the-service-for-my-project" class="md-nav__link">
+    24. Where can I find the pubsub service account that was created when I selected the service for my project?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-getting-this-error-while-creating-a-topic-with-pull-subscriptions-this-is-only-happening-for-the-topic-which-has-dead-letter-flag-enabled-i-am-on-vpn-and-authenticated-also-other-topicwithout-dead-letter-reference-and-its-pull-subscriptions-are-created-in-the-same-terraform-apply" class="md-nav__link">
+    25. getting this error while creating a topic with pull subscriptions. This is only happening for the topic which has dead letter flag enabled. I am on VPN and authenticated. also other topic(without dead letter reference) and its pull subscriptions are created in the same terraform apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-unable-to-decode-the-published-messages-correctly" class="md-nav__link">
+    26. Unable to decode the published messages correctly
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          PubSub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PubSub" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          PubSub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.ford.com/gcp/tfm-pubsub" class="md-nav__link">
+        Terraform Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-access-pubsub-service/" class="md-nav__link">
+        Public Internet Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-multiregion/" class="md-nav__link">
+        MultiRegion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-day2-operations/" class="md-nav__link">
+        Day 2 Operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubsub-migration-2_0/" class="md-nav__link">
+        Migrate from 1.0 to 2.0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Frequently Asked Question (FAQ)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Frequently Asked Question (FAQ)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-answers" class="md-nav__link">
+    Questions &amp; Answers
+  </a>
+  
+    <nav class="md-nav" aria-label="Questions &amp; Answers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-how-to-setup-push-subscriptions" class="md-nav__link">
+    1. How to setup Push Subscriptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-publicly-accessible-topic" class="md-nav__link">
+    2. Publicly accessible topic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-regions-are-available-currently-in-gcp-pubsub" class="md-nav__link">
+    3. What regions are available currently in GCP PubSub?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-how-do-i-provision-my-project-in-20" class="md-nav__link">
+    4. How do I provision my project in 2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dead-letter-topic-terraform-examples" class="md-nav__link">
+    5. Dead Letter Topic terraform examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-we-are-working-on-creating-a-gcp-pubsub-topic-and-subscription-in-our-qa-project-using-terraform-but-we-are-facing-the-below-error" class="md-nav__link">
+    6. We are working on creating a GCP pubsub topic and subscription in our QA project using terraform, but we are facing the below error:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-does-a-pipeline-service-account-need-the-ford-cloud-pubsub-service-write-role-in-order-to-create-pubsub-resources-using-that-module" class="md-nav__link">
+    7. Does a pipeline service account need the Ford Cloud PubSub Service write role in order to create PubSub resources using that module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-how-to-integrate-pubsub-with-dataflow" class="md-nav__link">
+    8. How to Integrate PubSub with Dataflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-we-are-facing-permission-denied-error-while-publishing-message-to-pubsub-from-cloud-run-do-we-need-to-provide-roles-in-iamserviceaccounttokencreator-access-to-service-account" class="md-nav__link">
+    9. We are facing permission denied error while publishing message to pubsub from cloud run. Do we need to provide roles in iam.serviceAccountTokenCreator access to Service account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-can-you-provide-us-the-terraform-link-for-pubsub" class="md-nav__link">
+    10. Can you provide us the terraform link for PubSub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-we-are-trying-to-publish-an-event-from-spring-boot-project-to-google-pubsub-service-can-someone-help-me-implement-this-or-if-there-is-any-material-or-doc-to-follow-can-you-please-share-it-with-me" class="md-nav__link">
+    11. We are trying to publish an event from spring boot project to google pubsub service. Can someone help me implement this? or If there is any material or doc to follow can you please share it with me?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-how-to-listen-pubsub-from-project-to-project" class="md-nav__link">
+    12. How to listen pubsub from project to project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-the-messages-in-pubsub-are-not-consuming-fast-for-the-service-deployed-in-cloud-run-is-there-any-way-to-scale-up-pubsub-or-any-another-configurations-to-consume-the-messages-quickly" class="md-nav__link">
+    13. The messages in pubsub are not consuming fast for the service deployed in cloud run. Is there any way to scale up pubsub or any another configurations to consume the messages quickly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-we-had-our-kafka-topic-created-for-10-gcp-projects-now-we-have-created-20-projects-would-like-to-know-the-process-to-onboard-our-new-projects-on-kafka-platform-so-that-we-can-create-topic-for-new-projects" class="md-nav__link">
+    14. We had our kafka topic created for 1.0 gcp projects. Now we have created 2.0 projects. Would like to know the process to onboard our new projects on kafka platform so that we can create topic for new projects.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-using-pubsub-if-we-do-originalmessagenack-incase-of-exception-will-that-message-forwarded-to-deadletterqueue-without-any-retries" class="md-nav__link">
+    15. Using Pubsub if we do originalMessage.nack() incase of exception, will that message forwarded to deadletterqueue without any retries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-we-are-trying-to-invoke-a-cloud-run-api-on-a-scheduled-basis-for-our-business-use-case-with-the-help-of-cloud-scheduler-via-pubsub-push-subscription-invoking-the-cloud-run-endpoint-url" class="md-nav__link">
+    16. We are trying to invoke a cloud run API on a scheduled basis for our business use case with the help of Cloud Scheduler via PubSub Push Subscription invoking the Cloud Run endpoint URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-what-permissions-are-needed-to-create-a-bigquery-subscription-through-the-web-interface" class="md-nav__link">
+    17. What permissions are needed to create a Bigquery subscription through the web interface?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-what-level-of-access-is-required-to-pull-messages-from-gcp-pub-sub" class="md-nav__link">
+    18. What level of access is required to pull messages from GCP Pub-Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-we-are-trying-to-implement-google-pubsub-while-deploying-in-gke-getting-google_application_credentials-error-any-suggestion" class="md-nav__link">
+    19. We are trying to implement google pub/sub While deploying in GKE getting GOOGLE_APPLICATION_CREDENTIALS error , any suggestion?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-permission-denied-trying-to-create-a-dataflow-from-the-template-pubsub-to-avro-files-on-cloud-storage" class="md-nav__link">
+    20. Permission Denied trying to create a Dataflow from the template "Pub/Sub to Avro Files on Cloud Storage"?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-trying-to-implement-dataflow-scheduler-using-cloud-scheduler-pubsub-cloud-run-it-looks-like-we-can-not-put-message-in-cloud-scheduler-pubsub-topic-as-the-data-variable-is-not-used-is-there-a-work-around-the-cloud-scheduler-integration-with-pubsub-doesnt-have-data-field-enabled-in-the-repo-as-of-now-it-sends-data-as-test-hard-coded-can-this-be-exposed-for-the-users-to-assign-needed-data-values" class="md-nav__link">
+    21. Trying to implement dataflow scheduler using Cloud Scheduler - pubsub - cloud run. It looks like we can not put message in cloud scheduler pubsub topic as the data variable is not used. Is there a work around? the cloud scheduler integration with pubsub doesn't have data field enabled in the repo. As of now it sends data as "test" hard coded. Can this be exposed for the users to assign needed data values?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-trying-to-create-a-log-sink-at-the-folder-level-and-have-that-log-sink-publish-to-a-pubsub-topic-originally-we-were-getting-a-topic_org_policy_denied-since-then-we-have-updated-the-writer-identity-to-have-the-correct-permissions-we-are-now-getting-a-permission-denied-any-help-would-be-much-appreciated" class="md-nav__link">
+    22. Trying to create a log sink at the folder level and have that log sink publish to a pubsub topic. Originally we were getting a topic_org_policy_denied. Since then we have updated the writer identity to have the correct permissions. We are now getting a permission denied. Any help would be much appreciated.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-where-can-i-get-more-help-on-terraform" class="md-nav__link">
+    23. Where can I get more help on Terraform?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-where-can-i-find-the-pubsub-service-account-that-was-created-when-i-selected-the-service-for-my-project" class="md-nav__link">
+    24. Where can I find the pubsub service account that was created when I selected the service for my project?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-getting-this-error-while-creating-a-topic-with-pull-subscriptions-this-is-only-happening-for-the-topic-which-has-dead-letter-flag-enabled-i-am-on-vpn-and-authenticated-also-other-topicwithout-dead-letter-reference-and-its-pull-subscriptions-are-created-in-the-same-terraform-apply" class="md-nav__link">
+    25. getting this error while creating a topic with pull subscriptions. This is only happening for the topic which has dead letter flag enabled. I am on VPN and authenticated. also other topic(without dead letter reference) and its pull subscriptions are created in the same terraform apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-unable-to-decode-the-published-messages-correctly" class="md-nav__link">
+    26. Unable to decode the published messages correctly
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-answers" class="md-nav__link">
+    Questions &amp; Answers
+  </a>
+  
+    <nav class="md-nav" aria-label="Questions &amp; Answers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-how-to-setup-push-subscriptions" class="md-nav__link">
+    1. How to setup Push Subscriptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-publicly-accessible-topic" class="md-nav__link">
+    2. Publicly accessible topic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-regions-are-available-currently-in-gcp-pubsub" class="md-nav__link">
+    3. What regions are available currently in GCP PubSub?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-how-do-i-provision-my-project-in-20" class="md-nav__link">
+    4. How do I provision my project in 2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dead-letter-topic-terraform-examples" class="md-nav__link">
+    5. Dead Letter Topic terraform examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-we-are-working-on-creating-a-gcp-pubsub-topic-and-subscription-in-our-qa-project-using-terraform-but-we-are-facing-the-below-error" class="md-nav__link">
+    6. We are working on creating a GCP pubsub topic and subscription in our QA project using terraform, but we are facing the below error:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-does-a-pipeline-service-account-need-the-ford-cloud-pubsub-service-write-role-in-order-to-create-pubsub-resources-using-that-module" class="md-nav__link">
+    7. Does a pipeline service account need the Ford Cloud PubSub Service write role in order to create PubSub resources using that module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-how-to-integrate-pubsub-with-dataflow" class="md-nav__link">
+    8. How to Integrate PubSub with Dataflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-we-are-facing-permission-denied-error-while-publishing-message-to-pubsub-from-cloud-run-do-we-need-to-provide-roles-in-iamserviceaccounttokencreator-access-to-service-account" class="md-nav__link">
+    9. We are facing permission denied error while publishing message to pubsub from cloud run. Do we need to provide roles in iam.serviceAccountTokenCreator access to Service account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-can-you-provide-us-the-terraform-link-for-pubsub" class="md-nav__link">
+    10. Can you provide us the terraform link for PubSub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-we-are-trying-to-publish-an-event-from-spring-boot-project-to-google-pubsub-service-can-someone-help-me-implement-this-or-if-there-is-any-material-or-doc-to-follow-can-you-please-share-it-with-me" class="md-nav__link">
+    11. We are trying to publish an event from spring boot project to google pubsub service. Can someone help me implement this? or If there is any material or doc to follow can you please share it with me?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-how-to-listen-pubsub-from-project-to-project" class="md-nav__link">
+    12. How to listen pubsub from project to project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-the-messages-in-pubsub-are-not-consuming-fast-for-the-service-deployed-in-cloud-run-is-there-any-way-to-scale-up-pubsub-or-any-another-configurations-to-consume-the-messages-quickly" class="md-nav__link">
+    13. The messages in pubsub are not consuming fast for the service deployed in cloud run. Is there any way to scale up pubsub or any another configurations to consume the messages quickly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-we-had-our-kafka-topic-created-for-10-gcp-projects-now-we-have-created-20-projects-would-like-to-know-the-process-to-onboard-our-new-projects-on-kafka-platform-so-that-we-can-create-topic-for-new-projects" class="md-nav__link">
+    14. We had our kafka topic created for 1.0 gcp projects. Now we have created 2.0 projects. Would like to know the process to onboard our new projects on kafka platform so that we can create topic for new projects.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-using-pubsub-if-we-do-originalmessagenack-incase-of-exception-will-that-message-forwarded-to-deadletterqueue-without-any-retries" class="md-nav__link">
+    15. Using Pubsub if we do originalMessage.nack() incase of exception, will that message forwarded to deadletterqueue without any retries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-we-are-trying-to-invoke-a-cloud-run-api-on-a-scheduled-basis-for-our-business-use-case-with-the-help-of-cloud-scheduler-via-pubsub-push-subscription-invoking-the-cloud-run-endpoint-url" class="md-nav__link">
+    16. We are trying to invoke a cloud run API on a scheduled basis for our business use case with the help of Cloud Scheduler via PubSub Push Subscription invoking the Cloud Run endpoint URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-what-permissions-are-needed-to-create-a-bigquery-subscription-through-the-web-interface" class="md-nav__link">
+    17. What permissions are needed to create a Bigquery subscription through the web interface?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-what-level-of-access-is-required-to-pull-messages-from-gcp-pub-sub" class="md-nav__link">
+    18. What level of access is required to pull messages from GCP Pub-Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-we-are-trying-to-implement-google-pubsub-while-deploying-in-gke-getting-google_application_credentials-error-any-suggestion" class="md-nav__link">
+    19. We are trying to implement google pub/sub While deploying in GKE getting GOOGLE_APPLICATION_CREDENTIALS error , any suggestion?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-permission-denied-trying-to-create-a-dataflow-from-the-template-pubsub-to-avro-files-on-cloud-storage" class="md-nav__link">
+    20. Permission Denied trying to create a Dataflow from the template "Pub/Sub to Avro Files on Cloud Storage"?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-trying-to-implement-dataflow-scheduler-using-cloud-scheduler-pubsub-cloud-run-it-looks-like-we-can-not-put-message-in-cloud-scheduler-pubsub-topic-as-the-data-variable-is-not-used-is-there-a-work-around-the-cloud-scheduler-integration-with-pubsub-doesnt-have-data-field-enabled-in-the-repo-as-of-now-it-sends-data-as-test-hard-coded-can-this-be-exposed-for-the-users-to-assign-needed-data-values" class="md-nav__link">
+    21. Trying to implement dataflow scheduler using Cloud Scheduler - pubsub - cloud run. It looks like we can not put message in cloud scheduler pubsub topic as the data variable is not used. Is there a work around? the cloud scheduler integration with pubsub doesn't have data field enabled in the repo. As of now it sends data as "test" hard coded. Can this be exposed for the users to assign needed data values?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-trying-to-create-a-log-sink-at-the-folder-level-and-have-that-log-sink-publish-to-a-pubsub-topic-originally-we-were-getting-a-topic_org_policy_denied-since-then-we-have-updated-the-writer-identity-to-have-the-correct-permissions-we-are-now-getting-a-permission-denied-any-help-would-be-much-appreciated" class="md-nav__link">
+    22. Trying to create a log sink at the folder level and have that log sink publish to a pubsub topic. Originally we were getting a topic_org_policy_denied. Since then we have updated the writer identity to have the correct permissions. We are now getting a permission denied. Any help would be much appreciated.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-where-can-i-get-more-help-on-terraform" class="md-nav__link">
+    23. Where can I get more help on Terraform?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-where-can-i-find-the-pubsub-service-account-that-was-created-when-i-selected-the-service-for-my-project" class="md-nav__link">
+    24. Where can I find the pubsub service account that was created when I selected the service for my project?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-getting-this-error-while-creating-a-topic-with-pull-subscriptions-this-is-only-happening-for-the-topic-which-has-dead-letter-flag-enabled-i-am-on-vpn-and-authenticated-also-other-topicwithout-dead-letter-reference-and-its-pull-subscriptions-are-created-in-the-same-terraform-apply" class="md-nav__link">
+    25. getting this error while creating a topic with pull subscriptions. This is only happening for the topic which has dead letter flag enabled. I am on VPN and authenticated. also other topic(without dead letter reference) and its pull subscriptions are created in the same terraform apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-unable-to-decode-the-published-messages-correctly" class="md-nav__link">
+    26. Unable to decode the published messages correctly
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pubsub-faqs">PubSub FAQs</h1>
+<h2 id="overview">Overview</h2>
+<p>The purpose of this document is to answer commonly asked questions about using PubSub at Ford. If you have a question not discussed or require clarification please join the:</p>
+<p><a href="https://www.webexteams.ford.com/space?r=bvgq">Kafka PubSub Teams Space</a></p>
+<h2 id="questions-answers">Questions &amp; Answers</h2>
+<h3 id="1-how-to-setup-push-subscriptions">1. How to setup Push Subscriptions</h3>
+<blockquote>
+<p>Refer to tfm github repo
+https://github.ford.com/gcp/tfm-pubsub#disclaimer-to-all-pubsub-push-subscription-users</p>
+</blockquote>
+<h3 id="2-publicly-accessible-topic">2. Publicly accessible topic</h3>
+<blockquote>
+<p>Refer to the following link https://github.ford.com/gcp/tfm-pubsub#publicly-accessible-pubsub-topic </p>
+</blockquote>
+<h3 id="3-what-regions-are-available-currently-in-gcp-pubsub">3. What regions are available currently in GCP PubSub?</h3>
+<blockquote>
+<ol>
+<li>
+<p>US Central 1 and US East 4 </p>
+</li>
+<li>
+<p>How to provision for multi region? (Please check with Kafka/PubSub team) </p>
+</li>
+</ol>
+</blockquote>
+<h3 id="4-how-do-i-provision-my-project-in-20">4. How do I provision my project in 2.0</h3>
+<blockquote>
+<p>Customers need to put in request via FCP portal.  Please refer to the link https://www.cloudportal.ford.com/multi-cloud to create project </p>
+</blockquote>
+<h3 id="5-dead-letter-topic-terraform-examples">5. Dead Letter Topic terraform examples</h3>
+<blockquote>
+<p>Please refer to github link https://github.ford.com/gcp/tfm-pubsub/tree/master/examples 
+for both example on push and pull </p>
+</blockquote>
+<h3 id="6-we-are-working-on-creating-a-gcp-pubsub-topic-and-subscription-in-our-qa-project-using-terraform-but-we-are-facing-the-below-error">6. We are working on creating a GCP pubsub topic and subscription in our QA project using terraform, but we are facing the below error:</h3>
+<p><code>in terraform-apply stage [terraform-cli] Error: Error creating Topic: googleapi: Error 403: Cloud Pub/Sub API has not been used in project ID before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/pubsub.googleapis.com/overview?project=projectnumber then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.</code></p>
+<blockquote>
+<p>APIs need to be enabled through FCP </p>
+</blockquote>
+<h3 id="7-does-a-pipeline-service-account-need-the-ford-cloud-pubsub-service-write-role-in-order-to-create-pubsub-resources-using-that-module">7. Does a pipeline service account need the Ford Cloud PubSub Service write role in order to create PubSub resources using that module</h3>
+<blockquote>
+<p>That service account needs provisioner role</p>
+</blockquote>
+<h3 id="8-how-to-integrate-pubsub-with-dataflow">8. How to Integrate PubSub with Dataflow</h3>
+<blockquote>
+<p>Please visit the link below to find more information on this:
+https://cloud.google.com/architecture/deploying-production-ready-log-exports-to-splunk-using-dataflow </p>
+</blockquote>
+<h3 id="9-we-are-facing-permission-denied-error-while-publishing-message-to-pubsub-from-cloud-run-do-we-need-to-provide-roles-in-iamserviceaccounttokencreator-access-to-service-account">9. We are facing permission denied error while publishing message to pubsub from cloud run. Do we need to provide roles in iam.serviceAccountTokenCreator access to Service account</h3>
+<blockquote>
+<p>The service account (in this case Cloud run SA) Should have publisher role to the topic and you can either use terraform or bind via FCP. </p>
+</blockquote>
+<h3 id="10-can-you-provide-us-the-terraform-link-for-pubsub">10. Can you provide us the terraform link for PubSub</h3>
+<blockquote>
+<p>https://github.ford.com/gcp/tfm-pubsub </p>
+</blockquote>
+<h3 id="11-we-are-trying-to-publish-an-event-from-spring-boot-project-to-google-pubsub-service-can-someone-help-me-implement-this-or-if-there-is-any-material-or-doc-to-follow-can-you-please-share-it-with-me">11. We are trying to publish an event from spring boot project to google pubsub service. Can someone help me implement this? or If there is any material or doc to follow can you please share it with me?</h3>
+<blockquote>
+<p>We do not have client specific documentation, you can start reading through spring documentation for pubsub publisher/subscriber  - https://spring.io/guides/gs/messaging-gcp-pubsub/</p>
+<p>We can help you on how you can authenticate or autorize to your pubsub topic from clients</p>
+</blockquote>
+<h3 id="12-how-to-listen-pubsub-from-project-to-project">12. How to listen pubsub from project to project</h3>
+<blockquote>
+<p>You will access the pub sub subscription to access topic in another project will be similar to accessing topic in your own project. You need to request source project to provide access to service account which you will use to provision your subscription</p>
+<pre><code>&gt;1. Project A that owns the topic must provide “Subscriber Role” to the service account  of Project B. Access is provided at resource level using terraform, in this case to a particular topic, in order to achieve Granular Access.
+
+&gt;2. Project B also need to have “Provisioner Role” in their own project in case they want to create the subscription.
+</code></pre>
+<p>Please refer the documentation for more details - https://github.ford.com/fordpubsub/tfm-pubsub/tree/master/examples/pubsub_granular_Control 
+</p>
+</blockquote>
+<h3 id="13-the-messages-in-pubsub-are-not-consuming-fast-for-the-service-deployed-in-cloud-run-is-there-any-way-to-scale-up-pubsub-or-any-another-configurations-to-consume-the-messages-quickly">13. The messages in pubsub are not consuming fast for the service deployed in cloud run. Is there any way to scale up pubsub or any another configurations to consume the messages quickly</h3>
+<blockquote>
+<p>One way to achieve higher/faster consumption of messages is to send them out in batches as it would help to increase throughput. Also if your subscriber is running on cloud run then go for a push subscription instead of pull subscription</p>
+</blockquote>
+<h3 id="14-we-had-our-kafka-topic-created-for-10-gcp-projects-now-we-have-created-20-projects-would-like-to-know-the-process-to-onboard-our-new-projects-on-kafka-platform-so-that-we-can-create-topic-for-new-projects">14. We had our kafka topic created for 1.0 gcp projects. Now we have created 2.0 projects. Would like to know the process to onboard our new projects on kafka platform so that we can create topic for new projects.</h3>
+<blockquote>
+<p>Eventhough you provide your gcp project during onboarding in the ticket, there is no link between gcp project and kafka. So you can use the same topic even from your gcp project 2.0 without any issue.</p>
+</blockquote>
+<h3 id="15-using-pubsub-if-we-do-originalmessagenack-incase-of-exception-will-that-message-forwarded-to-deadletterqueue-without-any-retries">15. Using Pubsub if we do originalMessage.nack() incase of exception, will that message forwarded to deadletterqueue without any retries</h3>
+<blockquote>
+<p>No our understanding even if you nack() the message it will retry for mentioned number if times before moving the message to DLQ.</p>
+<p>If the client holds the message beyond the agreed deadline without acking, or if the client sends a nack (negative acknowledgement) request, the message will be redelivered (potentially to a different subscriber on the same subscription).</p>
+</blockquote>
+<h3 id="16-we-are-trying-to-invoke-a-cloud-run-api-on-a-scheduled-basis-for-our-business-use-case-with-the-help-of-cloud-scheduler-via-pubsub-push-subscription-invoking-the-cloud-run-endpoint-url">16. We are trying to invoke a cloud run API on a scheduled basis for our business use case with the help of Cloud Scheduler via PubSub Push Subscription invoking the Cloud Run endpoint URL</h3>
+<blockquote>
+<p>Can you try this example module how to push message from pubsub to cloud run - https://github.ford.com/gcp/tfm-pubsub/tree/master/examples/pubsub_push_cloudrun</p>
+<p>Can you please check if the service account you are using have the invoke permission in cloud run.
+Please refer this documentation you need to create push subscription with service account and make sure you provide that service account the cloud run invoke permission.</p>
+<p>https://cloud.google.com/run/docs/triggering/pubsub-push#create-push-subscription</p>
+</blockquote>
+<h3 id="17-what-permissions-are-needed-to-create-a-bigquery-subscription-through-the-web-interface">17. What permissions are needed to create a Bigquery subscription through the web interface?</h3>
+<blockquote>
+<p>Grant the BigQuery Data Editor (roles/bigquery.dataEditor) role and the BigQuery Metadata Viewer (roles/bigquery.metadataViewer) role to the Pub/Sub service account.(also known as Pubsub service agent)
+More info can be found in the below links. 
+https://cloud.google.com/pubsub/docs/bigquery
+https://cloud.google.com/pubsub/docs/create-subscription#subscription</p>
+</blockquote>
+<h3 id="18-what-level-of-access-is-required-to-pull-messages-from-gcp-pub-sub">18. What level of access is required to pull messages from GCP Pub-Sub</h3>
+<blockquote>
+<p>Pls ensure that the SA has subscriber role for that topic if its hosted in other project. source project should provide subscriber role to your SA project</p>
+</blockquote>
+<h3 id="19-we-are-trying-to-implement-google-pubsub-while-deploying-in-gke-getting-google_application_credentials-error-any-suggestion">19. We are trying to implement google pub/sub While deploying in GKE getting GOOGLE_APPLICATION_CREDENTIALS error , any suggestion?</h3>
+<blockquote>
+<p>Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'topicAdminClient' defined in class path resource [com/google/cloud/spring/autoconfigure/pubsub/GcpPubSubAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.cloud.pubsub.v1.TopicAdminClient]: Factory method 'topicAdminClient' threw exception; nested exception is com.google.cloud.spring.pubsub.core.PubSubException: An error occurred while creating TopicAdminClient.; nested exception is java.io.IOException: The Application Default Credentials are not available. They are available if running in Google Compute Engine. Otherwise, the environment variable GOOGLE_APPLICATION_CREDENTIALS must be defined pointing to a file defining the credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.</p>
+<p>Please refer the document on how to authenticate to any GCP service when using GKE. https://cloud.google.com/docs/authentication/provide-credentials-adc#containerized</p>
+<p>You may have to use the Workload Identity  - https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity</p>
+</blockquote>
+<h3 id="20-permission-denied-trying-to-create-a-dataflow-from-the-template-pubsub-to-avro-files-on-cloud-storage">20. Permission Denied trying to create a Dataflow from the template "Pub/Sub to Avro Files on Cloud Storage"?</h3>
+<blockquote>
+<p>You are missing on  permissions what dataflow requires to create a dataflow-pipeline, Please reachout to dan deewale : ddewael5@ford.com</p>
+</blockquote>
+<h3 id="21-trying-to-implement-dataflow-scheduler-using-cloud-scheduler-pubsub-cloud-run-it-looks-like-we-can-not-put-message-in-cloud-scheduler-pubsub-topic-as-the-data-variable-is-not-used-is-there-a-work-around-the-cloud-scheduler-integration-with-pubsub-doesnt-have-data-field-enabled-in-the-repo-as-of-now-it-sends-data-as-test-hard-coded-can-this-be-exposed-for-the-users-to-assign-needed-data-values">21. Trying to implement dataflow scheduler using Cloud Scheduler - pubsub - cloud run. It looks like we can not put message in cloud scheduler pubsub topic as the data variable is not used. Is there a work around? the cloud scheduler integration with pubsub doesn't have data field enabled in the repo. As of now it sends data as "test" hard coded. Can this be exposed for the users to assign needed data values?</h3>
+<blockquote>
+<p>As this feature what you are asking is part of scheduler module - https://github.ford.com/gcp/tfm-scheduler. This is managed by different team you need to work with cloud scheduler team to get this change updated in their module</p>
+<p>Additional info: 
+Terraform module that will guide how to publish to pub/sub topic using cloud scheduler - https://github.ford.com/gcp/tfm-pubsub/blob/master/examples/cloud-scheduler/scheduler.tf.
+How to push the message to cloud run using push subscription - https://github.ford.com/gcp/tfm-pubsub/tree/master/examples/pubsub_push_cloudrun</p>
+</blockquote>
+<h3 id="22-trying-to-create-a-log-sink-at-the-folder-level-and-have-that-log-sink-publish-to-a-pubsub-topic-originally-we-were-getting-a-topic_org_policy_denied-since-then-we-have-updated-the-writer-identity-to-have-the-correct-permissions-we-are-now-getting-a-permission-denied-any-help-would-be-much-appreciated">22. Trying to create a log sink at the folder level and have that log sink publish to a pubsub topic. Originally we were getting a topic_org_policy_denied. Since then we have updated the writer identity to have the correct permissions. We are now getting a permission denied. Any help would be much appreciated.</h3>
+<blockquote>
+<p>you need logging.viewer and logging.privateLogViewer permissions added to the account</p>
+</blockquote>
+<h3 id="23-where-can-i-get-more-help-on-terraform">23. Where can I get more help on Terraform?</h3>
+<blockquote>
+<p>For any Terraform related issue please reach out to GCP DevOps Dojo and Community Support Form -  https://www.webexteams.ford.com/space?r=m1gv</p>
+<p>Refer the link for documentation - https://docs.gcp.ford.com/docs/support/local-dev/</p>
+</blockquote>
+<h3 id="24-where-can-i-find-the-pubsub-service-account-that-was-created-when-i-selected-the-service-for-my-project">24. Where can I find the pubsub service account that was created when I selected the service for my project?</h3>
+<blockquote>
+<p>Go to IAM in GCP project, then Check the check box on the right side of the IAM UI where it says Google provided roles and grants.
+Then Scroll to very bottom and you will find a pubsub service agent with below naming convention.
+Service-your_project_id@
+Select one which contains pubsub after "@".</p>
+</blockquote>
+<h3 id="25-getting-this-error-while-creating-a-topic-with-pull-subscriptions-this-is-only-happening-for-the-topic-which-has-dead-letter-flag-enabled-i-am-on-vpn-and-authenticated-also-other-topicwithout-dead-letter-reference-and-its-pull-subscriptions-are-created-in-the-same-terraform-apply">25. getting this error while creating a topic with pull subscriptions. This is only happening for the topic which has dead letter flag enabled. I am on VPN and authenticated. also other topic(without dead letter reference) and its pull subscriptions are created in the same terraform apply</h3>
+<blockquote>
+<p>│ Error: Error creating Subscription: googleapi: Error 403: Request is prohibited by organization's policy. vpcServiceControlsUniqueIdentifier: mt7Cjn3GV4mnxFVr4Mb4BAqhlr_L0uqRC8mRTOe77P9jQq8fyTQUYw
+│ Details:
+│ [
+│   {
+│     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+│     "violations": [
+│       {
+│         "description": "mt7Cjn3GV4mnxFVr4Mb4BAqhlr_L0uqRC8mRTOe77P9jQq8fyTQUYw",
+│         "type": "VPC_SERVICE_CONTROLS"
+│       }
+│     ]
+│   },
+│   {
+│     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+│     "domain": "googleapis.com",
+│     "metadata": {
+│       "consumer": "projects/232007124988",
+│       "service": "pubsub.googleapis.com",
+│       "uid": "mt7Cjn3GV4mnxFVr4Mb4BAqhlr_L0uqRC8mRTOe77P9jQq8fyTQUYw"
+│     },
+│     "reason": "SECURITY_POLICY_VIOLATED"
+│   }
+│ ]
+│ 
+│   with module.base.module.pubsub-vadr-release-topic.google_pubsub_subscription.pull_subscriptions["au-na"],
+│   on .terraform/modules/base.pubsub-vadr-release-topic/main.tf line 98, in resource "google_pubsub_subscription" "pull_subscriptions":
+│   98: resource "google_pubsub_subscription" "pull_subscriptions" {</p>
+<p>need to provide the deadletter topic name in the below format</p>
+<p><code>projects/&lt;Project-id&gt;/topics/&lt;topic-name&gt;</code></p>
+<p>Please contact terraform SME for additional support. </p>
+</blockquote>
+<h3 id="26-unable-to-decode-the-published-messages-correctly">26. Unable to decode the published messages correctly</h3>
+<blockquote>
+<p>PubSub treats the payload as a byte[]. The encoding and decoding should be up to you. If this is java, make sure you are defining the right character set in the byte[] to String logic. Perhaps python has something similar. </p>
+</blockquote>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Ford Cloud Platform All Rights Reserved
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.action.edit", "content.action.view", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

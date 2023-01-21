@@ -1,3 +1,7 @@
+#conda create --prefix ./env python=3.8 -y
+#source activate ./env
+#pip install -r requirements.txt
+
 echo [$(date)]: "START"
 export _VERSION_=3.8
 echo [$(date)]: "creating environment with python ${_VERSION_}"
@@ -7,3 +11,5 @@ source activate ./env
 echo [$(date)]: "install requirements"
 pip install -r requirements.txt
 echo [$(date)]: "END"
+
+
