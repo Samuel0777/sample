@@ -1,0 +1,125 @@
+site_name: Kafka Services
+#site_url: https://pages.github.ford.com/serverless/serverless-hub/
+site_description: Project documentation with Markdown.
+site_author: lsamue16@ford.com
+repo_name: confluent-kafka-documentation
+repo_url: https://github.ford.com/fordkafka/confluent-kafka-documentation
+#edit_uri: blob/master/docs
+copyright: Copyright &copy; Ford Cloud Platform 
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  
+# Configuration
+theme:
+  
+  logo: image/ford-logo.png
+  name: material
+  features:
+    # - navigation.sections
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.indexes
+    - navigation.top
+    - content.action.edit
+    - content.action.view
+    - search.highlight
+    - search.share
+    - search.suggest
+  icon:
+    edit: material/pencil
+    view: material/eye
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+      
+    
+  language: en
+  palette:
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to light mode
+      primary: indigo
+      accent: purple 
+    - scheme: default 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime 
+  font:
+    text: Roboto
+    code: Roboto Mono 
+
+extra: 
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.ford.com/fordkafka/confluent-kafka-documentation
+    - icon: fontawesome/brands/docker
+      link: https://registry.ford.com/organization/confluentkafka
+
+
+nav:
+  - Home: 
+########## Left pane navigation ##########
+    - Kafka:
+      - Overview: kafka/README.md
+      - Kafka-onboarding-pre-requisite: kafka/Onboarding_Pre-requisite.md
+      - Kafka-onboarding-using-fcp: kafka/onboarding-fcp.md
+      - Connect-to-kafka: kafka/how-to-connect-to-kafka.md
+      - Kafka-cli-commands: kafka/kafka-cli-commnds.md
+      - Monitoring-topic-consumer: kafka/Topic-Consumer-Monitoring.md
+      - Monitoring-consumer-lag: kafka/monitoring_consumer_lag.md
+      - MultiRegion-testing: kafka/cluster_linking_multregion_testing_steps.md
+      - Performance-tuning: kafka/Performance_Tuning.md
+      - Update-configs: kafka/configs.md
+      - Consumer-offset-management: kafka/consumer-offset-management.md
+      - Data-compression: kafka/data-compression.md
+      - Frequently Asked Question (FAQ): kafka/FAQ.md
+####################
+  # - Understanding the basics: To-be-defined.md
+  # - Core Concepts: Core-concepts.md   
+  # - Getting Started:
+  - Kafka: 
+    # - Introduction:
+    #   - What is Cloud Function: Serverless-Docs/cloud-functions/What-is-Cloud-Function.md
+    #   - When to use Cloud Function: Serverless-Docs/cloud-functions/When-to-use-Cloud-Function.md
+      - Overview: kafka/README.md
+      - Kafka-onboarding-pre-requisite: kafka/Onboarding_Pre-requisite.md
+      - Kafka-onboarding-using-fcp: kafka/onboarding-fcp.md
+      - Connect-to-kafka: kafka/how-to-connect-to-kafka.md
+      - Kafka-cli-commands: kafka/kafka-cli-commnds.md
+      - Monitoring-topic-consumer: kafka/Topic-Consumer-Monitoring.md
+      - Monitoring-consumer-lag: kafka/monitoring_consumer_lag.md
+      - MultiRegion-testing: kafka/cluster_linking_multregion_testing_steps.md
+      - Performance-tuning: kafka/Performance_Tuning.md
+      - Update-configs: kafka/configs.md
+      - Consumer-offset-management: kafka/consumer-offset-management.md
+      - Data-compression: kafka/data-compression.md
+      - Frequently Asked Question (FAQ): kafka/FAQ.md
+
+extra_css:
+  - stylesheets/extra.css    
